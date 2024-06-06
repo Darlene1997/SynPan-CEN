@@ -3,6 +3,7 @@
 A method to identify and compare the syntenic satellite pairs among centromeres, utilizing satellite phylogenetic information and pairwise edit distance.
 
 ### Dependencies:
+- [bedtools](https://bedtools.readthedocs.io/en/latest/index.html)
 - [BLASTN](https://www.ncbi.nlm.nih.gov/books/NBK279690/)
 - [python-Levenshtein](https://pypi.org/project/python-Levenshtein/)
 - [DAGchainer](https://vcru.wisc.edu/simonlab/bioinformatics/programs/dagchainer/dagchainer_documentation.html)
@@ -31,33 +32,50 @@ Chr01_NIP	17488157	17489008	+	LOC_Os01g30970.1.MSUv7.0	Gene
 Chr01_NIP	17489009	17490854	-	CW06_rnd-5_family-1612	LTR
 Chr01_NIP	17490883	17490952	+	CW06_rnd-5_family-7862	other_repeat
 Chr01_NIP	17491002	17491068	-	NH285_rnd-4_family-4525	other_repeat
-Chr01_NIP	17491074	17491342	+	DNA8-5D_OS	other_repeat
-
 ```
+- Sequences of all satellite repeats
+```
+e.g. CR_CENtype_repeats_NIP.csv
 
-
+16810093.0,16810247.0,155,CATGATTTTTGGACATTTTGGATTGTATTGGGTGCGTTCGTGGCAAAAACTCACTTCGTGATTCGCGCGGCGAACTTTTGTTTATTAATGCGAATATTGGCACACGAGGGTGCGATGTTTTTGACCATAATCAAAAAGTTTAAAAAACGCCAAAA,-,CEN154,NIP.fasta_Chr01_NIP,Chr01_NIP,13.0,nan
+16810248.0,16810413.0,166,CATGATTTTTGGACATATTGGAGTGTATTGGGTGTGTTCGTGGCAAAAACTCACTTCGTGAATTGCGCGACGAAATTTTGTCAATTAATGCCAATATTGCTATATTTTGGCACACACGGGTGCGTTTTTTTTTGTACCGGAATGAAAAGTTCGAAAAGCACCAAAA,-,CEN154,NIP.fasta_Chr01_NIP,Chr01_NIP,21.0,nan
+16810414.0,16810578.0,165,CATGATTTTTGGACATATTGGAGTGTATTGGGTGTGTTCGTGGCAAAAACTCACTTCGTGATTCGTGCGGCGAACTCTTGTCAAATAATGCCAATATTGGCATATTTTGGCCCGCACAGGTGCGATGTTTTTGACCGGAATGAAAAAGTTCAAAAAGCATCAAAA,-,CEN154,NIP.fasta_Chr01_NIP,Chr01_NIP,17.0,nan
+16810579.0,16810743.0,165,CATGATTTTTGGACATATTGGAGTGTATTGGGTGCGTTCATGGCAAAAACTCACTTCGTGATTCGCGCGGCGAAATTTTGTCAATTAATTCCAATGTTGGCATATTTTGGCCCACACGGTTGCGATGTTTTTGACCGGAATGAAAAAGTTCAGAAAGCGACAAAA,-,CEN154,NIP.fasta_Chr01_NIP,Chr01_NIP,18.0,nan
+16810744.0,16810908.0,165,CATGATTTTTGGACATATTGGAGTGTATTGGATGTGTTCGTGGCAAAAACTCACTTGGTGATTCGCGCGGCGAACTTTTGTCACTTAATGCCAATATTGGCATATTTTCGTCCACACGGGTGCGATGTTTTTGACCGGAATGAAAAAGTTCAAAAAGCACCAAAA,-,CEN154,NIP.fasta_Chr01_NIP,Chr01_NIP,14.0,nan
+16810909.0,16811073.0,165,CATGATTTTTGGACATATTGGAGTGTATTGGATGTGTTCGTGGCAAAAACTCACTTGGTGATTCGCGCGGTGTACTTTTGTCAGTTAATGCCAATATTGGCATATTTTGGCCCGTACGGGTGCGATGTTTTTAACTGGAGTGAAAAAGTTCAAAAAGCACCAAGA,-,CEN154,NIP.fasta_Chr01_NIP,Chr01_NIP,21.0,nan
+16811074.0,16811238.0,165,CATGATTTTTGGACATATTGGAGTGTATTGGGTGTGTTCGTGGCAAAAACTCACTTCGTGATTCGCGCGGCGTACTTTTGTCAGTTAATGCCAATATAGGCATATTCTGGCCCGCACGGGTGCAATGTTTTTGACTGAAATGAAAAAGTTCAAAAAGCACCAAGA,-,CEN154,NIP.fasta_Chr01_NIP,Chr01_NIP,19.0,na
+```
 ### Run
-- get blast best hit of paired LTR in two accessions
+- Get blast best hit of PAIRWISE LTRs in two accessions
 ```
-python ../00_LTR_blast_ingroup_chr_ED_0522.py -r ${ref} -q ${que} -chr Chr${each_chr}
-```
-
-- find a framework for min ED and get pairs
-```
-python ../01_calculate_ED_in_group_0522.py -r ${ref} -q ${que} -chr Chr${each_chr}
-python ../02_framework_ED_min_new_0522.py -r ${ref} -q ${que} -chr Chr${each_chr}
+python LTR_BlastBestHit_Pairs.py -r ${ref} -q ${que} -chr Chr${each_chr} -d ${Dir}
 ```
 
-- use DAGchainer to decide the best path
+- Get all-vs-all pairwise ED comparisons within the same group
 ```
-python ../03_addwith_window_blocks_0522.py -r ${ref} -q ${que} -chr Chr${each_chr} -e 15
+python Monomer_PairED_InGroup.py -r ${ref} -q ${que} -chr Chr${each_chr} -d ${Dir}
 ```
 
-- get the file format for ploting
+- Find a framework of minimum edit distance
 ```
-python ../04_merge_forplot_ingroup_chr_ED_0522.py -r ${ref} -q ${que} -c Chr${each_chr} -e 15
-python ../05_concat_filter_chr_addEDrangecolor_0522.py -r ${ref} -q ${que} -c Chr${each_chr} -e 15
-python ../08_add_blank_region_0522.py -r ${ref} -q ${que} -c Chr${each_chr} -e 15
+python Framework_WithMinED.py -r ${ref} -q ${que} -chr Chr${each_chr} -d ${Dir}
+```
+
+- Slide windows for DAGchainer to decide the local best alignments
+```
+python SlideWindow_DAGchainer.py -r ${ref} -q ${que} -chr Chr${each_chr} -e 15 -d ${Dir}
+```
+
+- Get the formats for ploting
+```
+python Merge_Tracks_Pairs.py -r ${ref} -q ${que} -c Chr${each_chr} -e 15 -d ${Dir}
+python ED_ColorRange.py -r ${ref} -q ${que} -c Chr${each_chr} -e 15 -d ${Dir}
+python Add_More_Details.py -r ${ref} -q ${que} -c Chr${each_chr} -e 15 -d ${Dir}
+```
+
+- Ploting
+```
+Rscript MatchList_Pairs_12chr_EDColorRange.R ${ref}_$(que) 15
 ```
 
 
