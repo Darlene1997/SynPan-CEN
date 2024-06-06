@@ -164,7 +164,7 @@ The color range between tracks represent edit distance of the element pair.
 The three tracks in each side represent monomer subfamilies, strand orientations, and TEs, respectively.
 ```
 
-![image](https://github.com/Darlene1997/SynPan-CEN/assets/67579562/2d233b76-00eb-4003-ba71-c10d778359fe)
+![image](https://github.com/Darlene1997/SynPan-CEN/assets/67579562/37d1e7c5-2794-49aa-9d5e-e33bf0f5de81)
 
 
 ### Others
