@@ -1,0 +1,469 @@
+############## 1 calculate_ED_in_groups #####################
+Do Chr01_NIP_SL177_group_pairED_all.matchList exists!
+############## 2 change_format_of_dag #####################
+Do Chr01_NIP_SL177_group_pairED_order_all.dag finished!
+############## 3 get_frame #####################
+Do use_ED_as_framework_of_partial_DAGchainer
+To get Chr01_NIP_SL177_pairED_frame0_addLTR.aligncoords
+Start geting temp ED_frame0_select_framework.sg
+Finish geting temp ED_frame0_select_framework.sg
+Start geting final ED_frame0_select_framework.sg
+The ED selected for frame is 0 
+THEN Do ED_pairnumber_pick
+Do get_bigger_ED
+MAX_order_s_r: 2869 , MAX_order_s_q: 2996
+chr_1--pair_num: 1065
+pair_now: 0
+block_number: 0
+Do out_bigger_ED_for_panduan
+Ref: 0-0; Que: 0-1
+Do get_DAGchainer_synteny
+DAGchainer for block 0
+pair_now: 0
+block_number: 1
+Do out_bigger_ED_for_panduan
+Ref: 0-24; Que: 1-25
+Do get_DAGchainer_synteny
+DAGchainer for block 1
+Start geting pairED15_block1.sg
+Finish geting pairED15_block1.sg
+pair_now: 20
+block_number: 2
+Do out_bigger_ED_for_panduan
+Ref: 24-291; Que: 25-61
+Do get_DAGchainer_synteny
+DAGchainer for block 2
+Start geting pairED15_block2.sg
+Finish geting pairED15_block2.sg
+pair_now: 40
+block_number: 3
+Do out_bigger_ED_for_panduan
+Ref: 291-344; Que: 61-86
+Do get_DAGchainer_synteny
+DAGchainer for block 3
+Start geting pairED15_block3.sg
+Finish geting pairED15_block3.sg
+pair_now: 60
+block_number: 4
+Do out_bigger_ED_for_panduan
+Ref: 344-385; Que: 86-126
+Do get_DAGchainer_synteny
+DAGchainer for block 4
+Start geting pairED15_block4.sg
+Finish geting pairED15_block4.sg
+pair_now: 80
+block_number: 5
+Do out_bigger_ED_for_panduan
+Ref: 385-437; Que: 126-154
+Do get_DAGchainer_synteny
+DAGchainer for block 5
+Start geting pairED15_block5.sg
+Finish geting pairED15_block5.sg
+pair_now: 100
+block_number: 6
+Do out_bigger_ED_for_panduan
+Ref: 437-474; Que: 154-177
+Do get_DAGchainer_synteny
+DAGchainer for block 6
+Start geting pairED15_block6.sg
+Finish geting pairED15_block6.sg
+pair_now: 120
+block_number: 7
+Do out_bigger_ED_for_panduan
+Ref: 474-496; Que: 177-199
+Do get_DAGchainer_synteny
+DAGchainer for block 7
+Start geting pairED15_block7.sg
+Finish geting pairED15_block7.sg
+pair_now: 140
+block_number: 8
+Do out_bigger_ED_for_panduan
+Ref: 496-608; Que: 199-235
+Do get_DAGchainer_synteny
+DAGchainer for block 8
+Start geting pairED15_block8.sg
+Finish geting pairED15_block8.sg
+pair_now: 160
+block_number: 9
+Do out_bigger_ED_for_panduan
+Ref: 608-636; Que: 235-260
+Do get_DAGchainer_synteny
+DAGchainer for block 9
+Start geting pairED15_block9.sg
+Finish geting pairED15_block9.sg
+pair_now: 180
+block_number: 10
+Do out_bigger_ED_for_panduan
+Ref: 636-680; Que: 260-283
+Do get_DAGchainer_synteny
+DAGchainer for block 10
+Start geting pairED15_block10.sg
+Finish geting pairED15_block10.sg
+pair_now: 200
+block_number: 11
+Do out_bigger_ED_for_panduan
+Ref: 680-752; Que: 283-372
+Do get_DAGchainer_synteny
+DAGchainer for block 11
+Start geting pairED15_block11.sg
+Finish geting pairED15_block11.sg
+pair_now: 220
+block_number: 12
+Do out_bigger_ED_for_panduan
+Ref: 752-784; Que: 372-404
+Do get_DAGchainer_synteny
+DAGchainer for block 12
+Start geting pairED15_block12.sg
+Finish geting pairED15_block12.sg
+pair_now: 240
+block_number: 13
+Do out_bigger_ED_for_panduan
+Ref: 784-819; Que: 404-449
+Do get_DAGchainer_synteny
+DAGchainer for block 13
+Start geting pairED15_block13.sg
+Finish geting pairED15_block13.sg
+pair_now: 260
+block_number: 14
+Do out_bigger_ED_for_panduan
+Ref: 819-893; Que: 449-484
+Do get_DAGchainer_synteny
+DAGchainer for block 14
+Start geting pairED15_block14.sg
+Finish geting pairED15_block14.sg
+pair_now: 280
+block_number: 15
+Do out_bigger_ED_for_panduan
+Ref: 893-925; Que: 484-510
+Do get_DAGchainer_synteny
+DAGchainer for block 15
+Start geting pairED15_block15.sg
+Finish geting pairED15_block15.sg
+pair_now: 300
+block_number: 16
+Do out_bigger_ED_for_panduan
+Ref: 925-1000; Que: 510-555
+Do get_DAGchainer_synteny
+DAGchainer for block 16
+Start geting pairED15_block16.sg
+Finish geting pairED15_block16.sg
+pair_now: 320
+block_number: 17
+Do out_bigger_ED_for_panduan
+Ref: 1000-1053; Que: 555-602
+Do get_DAGchainer_synteny
+DAGchainer for block 17
+Start geting pairED15_block17.sg
+Finish geting pairED15_block17.sg
+pair_now: 340
+block_number: 18
+Do out_bigger_ED_for_panduan
+Ref: 1053-1075; Que: 602-637
+Do get_DAGchainer_synteny
+DAGchainer for block 18
+Start geting pairED15_block18.sg
+Finish geting pairED15_block18.sg
+pair_now: 360
+block_number: 19
+Do out_bigger_ED_for_panduan
+Ref: 1075-1097; Que: 637-661
+Do get_DAGchainer_synteny
+DAGchainer for block 19
+Start geting pairED15_block19.sg
+Finish geting pairED15_block19.sg
+pair_now: 380
+block_number: 20
+Do out_bigger_ED_for_panduan
+Ref: 1097-1164; Que: 661-691
+Do get_DAGchainer_synteny
+DAGchainer for block 20
+Start geting pairED15_block20.sg
+Finish geting pairED15_block20.sg
+pair_now: 400
+block_number: 21
+Do out_bigger_ED_for_panduan
+Ref: 1164-1189; Que: 691-752
+Do get_DAGchainer_synteny
+DAGchainer for block 21
+Start geting pairED15_block21.sg
+Finish geting pairED15_block21.sg
+pair_now: 420
+block_number: 22
+Do out_bigger_ED_for_panduan
+Ref: 1189-1213; Que: 752-835
+Do get_DAGchainer_synteny
+DAGchainer for block 22
+Start geting pairED15_block22.sg
+Finish geting pairED15_block22.sg
+pair_now: 440
+block_number: 23
+Do out_bigger_ED_for_panduan
+Ref: 1213-1242; Que: 835-914
+Do get_DAGchainer_synteny
+DAGchainer for block 23
+Start geting pairED15_block23.sg
+Finish geting pairED15_block23.sg
+pair_now: 460
+block_number: 24
+Do out_bigger_ED_for_panduan
+Ref: 1242-1285; Que: 914-1053
+Do get_DAGchainer_synteny
+DAGchainer for block 24
+Start geting pairED15_block24.sg
+Finish geting pairED15_block24.sg
+pair_now: 480
+block_number: 25
+Do out_bigger_ED_for_panduan
+Ref: 1285-1336; Que: 1053-1140
+Do get_DAGchainer_synteny
+DAGchainer for block 25
+Start geting pairED15_block25.sg
+Finish geting pairED15_block25.sg
+pair_now: 500
+block_number: 26
+Do out_bigger_ED_for_panduan
+Ref: 1336-1370; Que: 1140-1181
+Do get_DAGchainer_synteny
+DAGchainer for block 26
+Start geting pairED15_block26.sg
+Finish geting pairED15_block26.sg
+pair_now: 520
+block_number: 27
+Do out_bigger_ED_for_panduan
+Ref: 1370-1410; Que: 1181-1235
+Do get_DAGchainer_synteny
+DAGchainer for block 27
+Start geting pairED15_block27.sg
+Finish geting pairED15_block27.sg
+pair_now: 540
+block_number: 28
+Do out_bigger_ED_for_panduan
+Ref: 1410-1436; Que: 1235-1260
+Do get_DAGchainer_synteny
+DAGchainer for block 28
+Start geting pairED15_block28.sg
+Finish geting pairED15_block28.sg
+pair_now: 560
+block_number: 29
+Do out_bigger_ED_for_panduan
+Ref: 1436-1460; Que: 1260-1304
+Do get_DAGchainer_synteny
+DAGchainer for block 29
+Start geting pairED15_block29.sg
+Finish geting pairED15_block29.sg
+pair_now: 580
+block_number: 30
+Do out_bigger_ED_for_panduan
+Ref: 1460-1485; Que: 1304-1363
+Do get_DAGchainer_synteny
+DAGchainer for block 30
+Start geting pairED15_block30.sg
+Finish geting pairED15_block30.sg
+pair_now: 600
+block_number: 31
+Do out_bigger_ED_for_panduan
+Ref: 1485-1521; Que: 1363-1444
+Do get_DAGchainer_synteny
+DAGchainer for block 31
+Start geting pairED15_block31.sg
+Finish geting pairED15_block31.sg
+pair_now: 620
+block_number: 32
+Do out_bigger_ED_for_panduan
+Ref: 1521-1552; Que: 1444-1487
+Do get_DAGchainer_synteny
+DAGchainer for block 32
+Start geting pairED15_block32.sg
+Finish geting pairED15_block32.sg
+pair_now: 640
+block_number: 33
+Do out_bigger_ED_for_panduan
+Ref: 1552-1576; Que: 1487-1550
+Do get_DAGchainer_synteny
+DAGchainer for block 33
+Start geting pairED15_block33.sg
+Finish geting pairED15_block33.sg
+pair_now: 660
+block_number: 34
+Do out_bigger_ED_for_panduan
+Ref: 1576-1610; Que: 1550-1638
+Do get_DAGchainer_synteny
+DAGchainer for block 34
+Start geting pairED15_block34.sg
+Finish geting pairED15_block34.sg
+pair_now: 680
+block_number: 35
+Do out_bigger_ED_for_panduan
+Ref: 1610-1657; Que: 1638-1667
+Do get_DAGchainer_synteny
+DAGchainer for block 35
+Start geting pairED15_block35.sg
+Finish geting pairED15_block35.sg
+pair_now: 700
+block_number: 36
+Do out_bigger_ED_for_panduan
+Ref: 1657-1751; Que: 1667-1707
+Do get_DAGchainer_synteny
+DAGchainer for block 36
+Start geting pairED15_block36.sg
+Finish geting pairED15_block36.sg
+pair_now: 720
+block_number: 37
+Do out_bigger_ED_for_panduan
+Ref: 1751-1795; Que: 1707-1756
+Do get_DAGchainer_synteny
+DAGchainer for block 37
+Start geting pairED15_block37.sg
+Finish geting pairED15_block37.sg
+pair_now: 740
+block_number: 38
+Do out_bigger_ED_for_panduan
+Ref: 1795-1856; Que: 1756-1787
+Do get_DAGchainer_synteny
+DAGchainer for block 38
+Start geting pairED15_block38.sg
+Finish geting pairED15_block38.sg
+pair_now: 760
+block_number: 39
+Do out_bigger_ED_for_panduan
+Ref: 1856-1882; Que: 1787-1831
+Do get_DAGchainer_synteny
+DAGchainer for block 39
+Start geting pairED15_block39.sg
+Finish geting pairED15_block39.sg
+pair_now: 780
+block_number: 40
+Do out_bigger_ED_for_panduan
+Ref: 1882-1933; Que: 1831-1881
+Do get_DAGchainer_synteny
+DAGchainer for block 40
+Start geting pairED15_block40.sg
+Finish geting pairED15_block40.sg
+pair_now: 800
+block_number: 41
+Do out_bigger_ED_for_panduan
+Ref: 1933-2010; Que: 1881-1918
+Do get_DAGchainer_synteny
+DAGchainer for block 41
+Start geting pairED15_block41.sg
+Finish geting pairED15_block41.sg
+pair_now: 820
+block_number: 42
+Do out_bigger_ED_for_panduan
+Ref: 2010-2055; Que: 1918-1955
+Do get_DAGchainer_synteny
+DAGchainer for block 42
+Start geting pairED15_block42.sg
+Finish geting pairED15_block42.sg
+pair_now: 840
+block_number: 43
+Do out_bigger_ED_for_panduan
+Ref: 2055-2089; Que: 1955-2025
+Do get_DAGchainer_synteny
+DAGchainer for block 43
+Start geting pairED15_block43.sg
+Finish geting pairED15_block43.sg
+pair_now: 860
+block_number: 44
+Do out_bigger_ED_for_panduan
+Ref: 2089-2122; Que: 2025-2059
+Do get_DAGchainer_synteny
+DAGchainer for block 44
+Start geting pairED15_block44.sg
+Finish geting pairED15_block44.sg
+pair_now: 880
+block_number: 45
+Do out_bigger_ED_for_panduan
+Ref: 2122-2145; Que: 2059-2095
+Do get_DAGchainer_synteny
+DAGchainer for block 45
+Start geting pairED15_block45.sg
+Finish geting pairED15_block45.sg
+pair_now: 900
+block_number: 46
+Do out_bigger_ED_for_panduan
+Ref: 2145-2179; Que: 2095-2170
+Do get_DAGchainer_synteny
+DAGchainer for block 46
+Start geting pairED15_block46.sg
+Finish geting pairED15_block46.sg
+pair_now: 920
+block_number: 47
+Do out_bigger_ED_for_panduan
+Ref: 2179-2426; Que: 2170-2651
+Do get_DAGchainer_synteny
+DAGchainer for block 47
+Start geting pairED15_block47.sg
+Finish geting pairED15_block47.sg
+pair_now: 940
+block_number: 48
+Do out_bigger_ED_for_panduan
+Ref: 2426-2656; Que: 2651-2796
+Do get_DAGchainer_synteny
+DAGchainer for block 48
+Start geting pairED15_block48.sg
+Finish geting pairED15_block48.sg
+pair_now: 960
+block_number: 49
+Do out_bigger_ED_for_panduan
+Ref: 2656-2691; Que: 2796-2844
+Do get_DAGchainer_synteny
+DAGchainer for block 49
+Start geting pairED15_block49.sg
+Finish geting pairED15_block49.sg
+pair_now: 980
+block_number: 50
+Do out_bigger_ED_for_panduan
+Ref: 2691-2718; Que: 2844-2872
+Do get_DAGchainer_synteny
+DAGchainer for block 50
+Start geting pairED15_block50.sg
+Finish geting pairED15_block50.sg
+pair_now: 1000
+block_number: 51
+Do out_bigger_ED_for_panduan
+Ref: 2718-2751; Que: 2872-2895
+Do get_DAGchainer_synteny
+DAGchainer for block 51
+Start geting pairED15_block51.sg
+Finish geting pairED15_block51.sg
+pair_now: 1020
+block_number: 52
+Do out_bigger_ED_for_panduan
+Ref: 2751-2783; Que: 2895-2935
+Do get_DAGchainer_synteny
+DAGchainer for block 52
+Start geting pairED15_block52.sg
+Finish geting pairED15_block52.sg
+pair_now: 1040
+block_number: 53
+Do out_bigger_ED_for_panduan
+Ref: 2783-2811; Que: 2935-2962
+Do get_DAGchainer_synteny
+DAGchainer for block 53
+Start geting pairED15_block53.sg
+Finish geting pairED15_block53.sg
+pair_now: 1060
+block_number: 54
+Do out_bigger_ED_for_panduan
+Ref: 2811-2815; Que: 2962-2966
+Do get_DAGchainer_synteny
+DAGchainer for block 54
+Do out_bigger_ED_for_panduan
+Ref: 2815-2869; Que: 2966-2996
+Do get_DAGchainer_synteny
+DAGchainer for block 55
+#####################  Finish geting Chr01_NIP_SL177_pairED15.sg_filter  #######################
+Start merge_for_plot
+ 1 matched ids
+ 2 no matched ids
+ 3 gene
+ 4 gaps
+ 5 blank region
+Start filter_in_each_window
+pairs_should_change: []
+Finish filter_in_each_window
+Geting new format for plot
+Finish geting new format for plot
+ 5 blank region
+ 5 blank region
