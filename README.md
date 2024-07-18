@@ -186,10 +186,6 @@ The three tracks in each side represent monomer subfamilies, strand orientations
 
 
 ### Others
-- Calculate local expansion or contraction
-```
-python 
-```
 
 - Calculate and compare substitution rates between centromere regions and chromosome arm
 ```
