@@ -8,7 +8,7 @@ A method to identify and compare the syntenic satellite pairs among centromeres,
 - [python-Levenshtein](https://pypi.org/project/python-Levenshtein/)
 - [DAGchainer](https://vcru.wisc.edu/simonlab/bioinformatics/programs/dagchainer/dagchainer_documentation.html)
 
-Specify your PATH to DAGCHAINER in [02_framework_ED_min_new_0601.py] and [03_addwith_window_blocks_0601.py] firstly.
+Specify your PATH to DAGCHAINER in [Framework_WithMinED.py] and [SlideWindow_DAGchainer.py] firstly.
 
 
 ### Input files
